@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Image to use</p>
+	<img id="shiva" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC1Z1ppYFn2wSmDPnDpQW_AdJNht_ZHA08mLw9RZGZld6f4CMgKkBoiU_isBt92TvgRtI&usqp=CAU" alt = "The shiva" width="200" height="200">
+
+	<p>Canvas to fill</p>
+	<canvas id = "myCanvas" width="250" height = "300" style ="border: 1px solid #d3d3d3;"></canvas>
+		<p><button onclick="myCanvas()">Try it</button></p>
+
+
+			<script>
+				function myCnvas()
+				{
+					var c = document.getElementById("myCanvas");
+					var ctx = c.getContext("2d");
+					var img = document.getElementById("shiva");
+					ctx.drawImage(img,10,10);
+				}
+
+			</script>
+
+</body>
+</html>
